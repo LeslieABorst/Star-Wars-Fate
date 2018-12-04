@@ -6,7 +6,7 @@
                 .when('/', {
                     template: '<main></main>'
                 })
-                .when('/movieList', {
+                .when('/results', {
                     template: '<results></results>'
                 })
         });

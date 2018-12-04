@@ -1,4 +1,18 @@
-<div>
-    <h2>the dark side has cookies</h2>
-    <results></results>
+<div class="faraway" ng-hide="!$ctrl.letmesee">
+    <img src="assets/images/farfaraway.png" alt="a long time ago in a galaxy far far away" title="star wars">
+    <button ng-click="$ctrl.quizStart()" class="btnstart">Start Quiz</button>
+</div>
+<div ng-show="!$ctrl.letmesee">
+    <h2 style="color: #FFFFFF;">What is your Star Wars Fate?</h2>
+    <div>
+        <h3>In a group of friends, what is your personality trait?</h3>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
 </div>

@@ -1,0 +1,47 @@
+/*STAR WARS APP STYLES*/
+
+/*FONT FAMILY*/
+
+@font-face {
+    font-family: StarWarsFont;
+    src: url(assets/Death\ Star.otf);
+}
+/*INDEX STYLES*/
+
+.wrapper {
+    background: url(assets/images/star.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.heading {
+    font-family: StarWarsFont, Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    text-align: center;
+    color: #FFE633;
+    margin-bottom: 0;
+}
+
+.faraway {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faraway img {
+    width: 90%;
+    height: 90%;
+}
+
+.btnstart {
+    font-family: StarWarsFont, Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.75em;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 5px;
+}
