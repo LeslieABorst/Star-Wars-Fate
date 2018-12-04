@@ -11,7 +11,5 @@ angular
         console.log("Im working!!");
     };
 
-    SwapiService.getPeople().then(response => {
-      console.log(response.data);
-    })
+    
 });
