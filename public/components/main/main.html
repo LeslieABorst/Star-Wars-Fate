@@ -2,23 +2,27 @@
     <img src="assets/images/farfaraway.png" alt="a long time ago in a galaxy far far away" title="star wars">
     <button ng-click="$ctrl.quizStart()" class="btnstart">Start Quiz</button>
 </div>
-<div ng-show="!$ctrl.letmesee">
-    <h2 style="color: #FFFFFF;">What is your Star Wars Fate?</h2>
-    <div>
+<div ng-show="!$ctrl.letmesee" class="questions">
+    <h2>What is your Star Wars Fate?</h2>
+    
+    <div id="lead" class="leader">
         <h3>Are you a leader or a follower?</h3>
         <input type="radio">Leader</input>
         <input type="radio">Follower</input>
     </div>
+    
     <div>
         <h3>Light Side or Dark Side</h3>
         <input type="radio">Light Side</input>
         <input type="radio">Dark Side</input>
     </div>
+    
     <div>
-        <h3>Action or Romace movie?</h3>
+        <h3>Action or Romance movie?</h3>
         <input type="radio">Action</input>
         <input type="radio">Romance</input>
     </div>
+    
     <div>
         <h3>Lightsaber or Blaster?</h3>
         <input type="radio">Blaster</input>
