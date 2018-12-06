@@ -4,6 +4,8 @@ angular
   .module("app")
   .service("SwapiService", function($http) { 
     const service = this;
+    service.userAnswers = [];
+
     service.getPeople = (people) => {
       return $http({
         method: "GET",
@@ -11,5 +13,7 @@ angular
         data: people
       });
     };
+
+
 
   });

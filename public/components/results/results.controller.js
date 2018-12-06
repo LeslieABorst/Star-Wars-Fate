@@ -4,24 +4,24 @@ angular
   .module("app")
   .controller("ResultsController", function(SwapiService) {
     const $ctrl = this;
-    $ctrl.userAnswers = [];
+    $ctrl.userAnswers = SwapiService.userAnswers;
     
-      $ctrl.luke = [a,a,a,a];
-      [a,a,a,b]
-      [a,a,b,a]
-      [a,a,b,b]
-      [a,b,a,a]
-      [a,b,a,b]
-      [a,b,b,a]
-      [a,b,b,b]
-      [b,a,a,a]
-      [b,a,a,b]
-      [b,a,b,a]
-      [b,a,b,b]
-      [b,b,a,a]
-      [b,b,a,b]
-      [b,b,b,a]
-      [b,b,b,b]
+    $ctrl.luke = [a,a,a,a];
+    [a,a,a,b]
+    [a,a,b,a]
+    [a,a,b,b]
+    [a,b,a,a]
+    [a,b,a,b]
+    [a,b,b,a]
+    [a,b,b,b]
+    [b,a,a,a]
+    [b,a,a,b]
+    [b,a,b,a]
+    [b,a,b,b]
+    [b,b,a,a]
+    [b,b,a,b]
+    [b,b,b,a]
+    [b,b,b,b]
    
 
     SwapiService.getPeople().then(response => {
