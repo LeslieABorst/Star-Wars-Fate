@@ -1,32 +1,34 @@
-<div class="faraway" ng-hide="!$ctrl.letmesee">
-    <img src="assets/images/farfaraway.png" alt="a long time ago in a galaxy far far away" title="star wars">
-    <button ng-click="$ctrl.quizStart()" class="btnstart">Start Quiz</button>
-</div>
-<div ng-show="!$ctrl.letmesee" class="questions">
-    <h2>What is your Star Wars Fate?</h2>
-    
-    <div id="lead" class="leader" ng-if="$ctrl.qone">
-        <h3>Are you a leader or a follower?</h3>
-        <button ng-click="$ctrl.qoneAnswerA()">Leader</button>
-        <button ng-click="$ctrl.qoneAnswerB()">Follower</button>
+<section class="animate-area">
+    <div class="faraway" ng-hide="!$ctrl.letmesee">
+        <img src="assets/images/farfaraway.png" alt="a long time ago in a galaxy far far away" title="star wars">
+        <button ng-click="$ctrl.quizStart()" class="btnstart">Start Quiz</button>
     </div>
-    
-    <div ng-if="!$ctrl.qtwo">
-        <h3>Light Side or Dark Side</h3>
-        <button ng-click="$ctrl.qtwoAnswerA()">Light Side</button>
-        <button ng-click="$ctrl.qtwoAnswerB()">Dark Side</button>
-    </div>
-    
-    <div ng-if="!$ctrl.qthree">
-        <h3>Action or Romance movie?</h3>
-        <button ng-click="$ctrl.qthreeAnswerA()">Action</button>
-        <button ng-click="$ctrl.qthreeAnswerB()">Romance</button>
-    </div>
-    
-    <div ng-if="!$ctrl.qfour">
-        <h3>Lightsaber or Blaster?</h3>
-        <button ng-click="$ctrl.qfourAnswerA()">Blaster</button>
-        <button ng-click="$ctrl.qfourAnswerB()">LightSaber</button>
-    </div>
+    <div ng-show="!$ctrl.letmesee" class="questions">
+        <h2>What is your Star Wars Fate?</h2>
+        
+        <div id="lead" class="leader" ng-if="$ctrl.qone">
+            <h3>Are you a leader or a follower?</h3>
+            <button ng-click="$ctrl.qoneAnswerA()">Leader</button>
+            <button ng-click="$ctrl.qoneAnswerB()">Follower</button>
+        </div>
+        
+        <div ng-if="!$ctrl.qtwo" id="light" class="dark">
+            <h3>Light Side or Dark Side</h3>
+            <button ng-click="$ctrl.qtwoAnswerA()">Light Side</button>
+            <button ng-click="$ctrl.qtwoAnswerB()">Dark Side</button>
+        </div>
+        
+        <div ng-if="!$ctrl.qthree" id="action" class="romance">
+            <h3>Action or Romance movie?</h3>
+            <button ng-click="$ctrl.qthreeAnswerA()">Action</button>
+            <button ng-click="$ctrl.qthreeAnswerB()">Romance</button>
+        </div>
+        
+        <div ng-if="!$ctrl.qfour" id="saber" class="blaster">
+            <h3>Lightsaber or Blaster?</h3>
+            <button ng-click="$ctrl.qfourAnswerA()">Blaster</button>
+            <button ng-click="$ctrl.qfourAnswerB()">LightSaber</button>
+        </div>
 
-</div>
+    </div>
+</section>

@@ -25,6 +25,20 @@
     margin-bottom: 0;
 }
 
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 100%; }
+}
+.animate-area { 
+	width: 100%; 
+	height: auto; 
+	background-image: url(assets/images/stars.png);
+	background-position: 0px 0px;
+	/* background-repeat: repeat-x; */
+
+	animation: animatedBackground 15s linear infinite;
+}
+
 .faraway {
     display: flex;
     flex-direction: column;
@@ -56,13 +70,13 @@ button a {
 
 
 /*slide in questions-------------------------*/
-#lead {
-    background: black;
+#lead, #light, #action, #saber{
+
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
 }
 
-.leader {
+.leader, .dark, .romance, .blaster  {
     animation: slide-in 0.5s forwards;
     -webkit-animation: slide-in 0.5s forwards;
 }
@@ -77,3 +91,15 @@ button a {
     100% { -webkit-transform: translateX(0%); }
 }
 /*------------------------------------------*/
+
+
+
+
+#q1 {
+    display:flex;
+}
+
+
+
+
+
