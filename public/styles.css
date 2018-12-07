@@ -25,6 +25,20 @@
     margin-bottom: 0;
 }
 
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 100%; }
+}
+.animate-area { 
+	width: 100%; 
+	height: auto; 
+	background-image: url(assets/images/stars.png);
+	background-position: 0px 0px;
+	/* background-repeat: repeat-x; */
+
+	animation: animatedBackground 15s linear infinite;
+}
+
 .faraway {
     display: flex;
     flex-direction: column;
