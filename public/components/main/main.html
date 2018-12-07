@@ -5,28 +5,28 @@
 <div ng-show="!$ctrl.letmesee" class="questions">
     <h2>What is your Star Wars Fate?</h2>
     
-    <div id="lead" class="leader">
+    <div id="lead" class="leader" ng-if="$ctrl.qone">
         <h3>Are you a leader or a follower?</h3>
-        <button ng-click="$ctrl.processAnswerA()">Leader</button>
-        <button ng-click="$ctrl.processAnswerB()">Follower</button>
+        <button ng-click="$ctrl.qoneAnswerA()">Leader</button>
+        <button ng-click="$ctrl.qoneAnswerB()">Follower</button>
     </div>
     
-    <div>
+    <div ng-if="!$ctrl.qtwo">
         <h3>Light Side or Dark Side</h3>
-        <button ng-click="$ctrl.processAnswerA()">Light Side</button>
-        <button ng-click="$ctrl.processAnswerB()">Dark Side</button>
+        <button ng-click="$ctrl.qtwoAnswerA()">Light Side</button>
+        <button ng-click="$ctrl.qtwoAnswerB()">Dark Side</button>
     </div>
     
-    <div>
+    <div ng-if="!$ctrl.qthree">
         <h3>Action or Romance movie?</h3>
-        <button ng-click="$ctrl.processAnswerA()">Action</button>
-        <button ng-click="$ctrl.processAnswerB()">Romance</button>
+        <button ng-click="$ctrl.qthreeAnswerA()">Action</button>
+        <button ng-click="$ctrl.qthreeAnswerB()">Romance</button>
     </div>
     
-    <div>
+    <div ng-if="!$ctrl.qfour">
         <h3>Lightsaber or Blaster?</h3>
-        <button ng-click="$ctrl.processAnswerA()">Blaster</button>
-        <button ng-click="$ctrl.processAnswerB()">LightSaber</button>
+        <button ng-click="$ctrl.qfourAnswerA()">Blaster</button>
+        <button ng-click="$ctrl.qfourAnswerB()">LightSaber</button>
     </div>
 
 </div>

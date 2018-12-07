@@ -50,6 +50,10 @@
     color: white;
 }
 
+button a {
+    font-style: none;
+}
+
 
 /*slide in questions-------------------------*/
 #lead {
