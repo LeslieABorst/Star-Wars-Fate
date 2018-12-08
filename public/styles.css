@@ -13,32 +13,51 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
+/*h9 {
+    color:white;
+}
+*/
 .heading {
     font-family: StarWarsFont, Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-size: 2.5em;
     text-align: center;
     color: #FFE633;
     margin-bottom: 0;
 }
 
+
+
+h2 {
+    text-align: center;
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+
+}
+
+/*----------------moving star background-----------------------*/
 @keyframes animatedBackground {
 	from { background-position: 0 0; }
 	to { background-position: 100% 100%; }
 }
 .animate-area { 
-	width: 100%; 
-	height: auto; 
+	width: auto; 
+	height: 100%; 
 	background-image: url(assets/images/stars.png);
 	background-position: 0px 0px;
 	/* background-repeat: repeat-x; */
+    padding-top: 50px;
 
 	animation: animatedBackground 15s linear infinite;
 }
-
+/*---------------------------------------------*/
 .faraway {
     display: flex;
     flex-direction: column;
@@ -57,7 +76,9 @@
     font-size: 1.75em;
     padding: 2%;
     margin: 5%;
-    border-radius: 5px;
+    border-radius: 25px;
+    width: 200px ;
+    border: black solid 3px;
 }
 
 .questions {
@@ -98,6 +119,65 @@ button a {
 #q1 {
     display:flex;
 }
+
+.box {
+    background: white;
+    color: black;
+    height: 25em;
+    width: 20em;
+    text-align: center;
+    border-radius: 25px;
+    padding-top: 2%;
+    margin-top: -8px;
+    font-weight: 900;
+    border: #FFE633 4px solid;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    /* align-content: ; */
+
+  /*  border: black solid 2px;*/
+}
+
+.b1, .b2  {
+    border-radius: 25px;
+    border: solid black 2px;
+    width: 40%;
+    height: 20%;
+    background-color: white;
+}
+
+.landingGif {
+    border-radius: 25px;
+
+}
+
+
+.b1:hover
+{
+    background-color: red;
+}
+
+
+.b2:hover 
+{
+    background-color: red;
+}
+
+#who {
+    display: flex;
+    justify-content: center;
+    border-radius: 70px;
+    background-color: white;
+    border: solid black 2px;
+    width: 300px;
+    height: 75px;
+    font-size: 48px;
+}
+
 
 
 
