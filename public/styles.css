@@ -25,6 +25,10 @@
     margin-bottom: 0;
 }
 
+.btnstart {
+    margin-top: 50px;
+}
+
 h2 {
     text-align: center;
     font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
@@ -161,6 +165,17 @@ button a {
 .b2:hover 
 {
     background-color: red;
+}
+
+#who {
+    display: flex;
+    justify-content: center;
+    border-radius: 70px;
+    background-color: white;
+    border: solid black 2px;
+    width: 300px;
+    height: 75px;
+    font-size: 48px;
 }
 
 
