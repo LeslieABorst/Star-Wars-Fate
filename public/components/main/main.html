@@ -1,40 +1,57 @@
 <section class="animate-area">
-<div class="faraway" ng-hide="!$ctrl.letmesee">
-    <img src="assets/images/farfaraway.png" alt="a long time ago in a galaxy far far away" title="star wars">
-    <button ng-click="$ctrl.quizStart()" class="btnstart">Start Quiz</button>
-</div>
-<div ng-show="!$ctrl.letmesee" class="questions">
-    <h2>What is your Star Wars Fate?</h2>
     
-    <div id="lead" class="leader">
-
-        <h3 id="q1">Are you a leader or a follower?</h3>
-        <input type="radio">Leader</input>
-        <input type="radio">Follower</input>
-
-        <h3>Are you a leader or a follower?</h3>
-        <button ng-click="$ctrl.processAnswerA()">Leader</button>
-        <button ng-click="$ctrl.processAnswerB()">Follower</button>
-
+    <div class="faraway" ng-hide="!$ctrl.letmesee">
+        <img src="assets/images/farfaraway.png" alt="a long time ago in a galaxy far far away" title="star wars">
+        <button ng-click="$ctrl.quizStart()" class="btnstart">Start Quiz</button>
     </div>
     
-    <div id="light" class="dark">
-        <h3>Light Side or Dark Side</h3>
-        <button ng-click="$ctrl.processAnswerA()">Light Side</button>
-        <button ng-click="$ctrl.processAnswerB()">Dark Side</button>
+    <div ng-show="!$ctrl.letmesee" class="questions">
+        <h2>What is your Star Wars Fate?</h2>
+     
+        <!-- -------------------------------------------- -->
+       <div id="lead" class="leader box" ng-if="$ctrl.qone">
+        <img class ="landingGif" src="assets/images/gif1.gif" height="250px" width="315">
+            <h3>Are you a leader or a follower?</h3>
+            
+            <div class="buttons">
+                    <button class="b1" ng-click="$ctrl.qoneAnswerA()">Leader</button>
+                    <button class="b2" ng-click="$ctrl.qoneAnswerB()">Follower</button>
+            </div>
+       
+        </div>
+        <!-- ------------------------------------------ -->
+        <div ng-if="!$ctrl.qtwo" id="light" class="dark box">
+          <img class="landingGif" src="assets/images/gif2.gif" height="250" width="315">
+            <h3>Do you identify with the light side or dark side?</h3>
+            
+            <div class="buttons">
+                    <button class="b1" ng-click="$ctrl.qtwoAnswerA()">Light Side</button>
+                    <button class="b2" ng-click="$ctrl.qtwoAnswerB()">Dark Side</button>
+            </div>
+        
+        </div>
+        <!-- --------------------------------------------------- -->
+        <div ng-if="!$ctrl.qthree" id="action" class="romance box">
+          <!-- <img class="landingGif" src="assets/image/gif3.gif" height="250" width="315"> -->
+            <h3>Do you prefer an action or romance movie?</h3>
+       
+            <div class="buttons">
+                    <button class="b1" ng-click="$ctrl.qthreeAnswerA()">Action</button>
+                    <button class="b2" ng-click="$ctrl.qthreeAnswerB()">Romance</button>
+            </div>
+       
+        </div>
+        <!-- ------------------------------------------------ -->
+        <div ng-if="!$ctrl.qfour" id="saber" class="blaster box">
+           <!-- <img class="landingGif" src="assets/image/gif4" height="250" width=""315> -->
+            <h3>Would you rather use a lightsaber or blaster?</h3>
+            
+            <div class="buttons">
+                <button class="b1" ng-click="$ctrl.qfourAnswerA()">Blaster</button>
+                <button class="b2" ng-click="$ctrl.qfourAnswerB()">LightSaber</button>
+            </div>
+        
+        </div>
+<!-- ---------------------------------------------------------- -->
     </div>
-    
-    <div id="action" class="romance">
-        <h3>Action or Romance movie?</h3>
-        <button ng-click="$ctrl.processAnswerA()">Action</button>
-        <button ng-click="$ctrl.processAnswerB()">Romance</button>
-    </div>
-    
-    <div id="saber" class="blaster">
-        <h3>Lightsaber or Blaster?</h3>
-        <button ng-click="$ctrl.processAnswerA()">Blaster</button>
-        <button ng-click="$ctrl.processAnswerB()">LightSaber</button>
-    </div>
-
-</div>
 </section>
