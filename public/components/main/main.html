@@ -1,10 +1,9 @@
 <section class="animate-area">
-    
     <div class="faraway" ng-hide="!$ctrl.letmesee">
         <img src="assets/images/farfaraway.png" alt="a long time ago in a galaxy far far away" title="star wars">
         <button ng-click="$ctrl.quizStart()" class="btnstart">Start Quiz</button>
     </div>
-    
+    </section>
     <div ng-show="!$ctrl.letmesee" class="questions">
         <h2>What is your Star Wars Fate?</h2>
      
@@ -42,6 +41,7 @@
        
         </div>
         <!-- ------------------------------------------------ -->
+        <section class="animate-area">
         <div ng-if="!$ctrl.qfour" id="saber" class="blaster box">
            <!-- <img class="landingGif" src="assets/image/gif4" height="250" width=""315> -->
             <h3>Would you rather use a lightsaber or blaster?</h3>
@@ -52,6 +52,7 @@
             </div>
         
         </div>
+    </section>
 <!-- ---------------------------------------------------------- -->
     </div>
-</section>
+    
