@@ -11,6 +11,7 @@ angular
     $ctrl.resultmovies = true;
     $ctrl.againbtn = true;
     
+    
     $ctrl.solo = {
       answers: ["a", "a", "a" ,"a"],
       id: 14};
@@ -96,6 +97,9 @@ angular
                 $ctrl.planet = planet.data;
               console.log($ctrl.planet); }, 5000);
             });
+            $timeout( function(){
+              $ctrl.againbtn = false;
+             }, 8000 );
         });
         console.log("hooray");
       };
@@ -325,10 +329,15 @@ angular
         console.log("HOORAY");
       };
     };
-
-    $ctrl.playAgain = function() {
+    // $timeout( function(){
+    //        $ctrl.againbtn = false;
+    //       }, 8000 );
+    
+        $ctrl.playAgain = function() {
       $location.url("/");
     };
+
+    
 
   });
 

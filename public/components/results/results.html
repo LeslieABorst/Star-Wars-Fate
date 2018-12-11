@@ -13,7 +13,7 @@
     <h2>And was featured in the following movies</h2>
     <h4 ng-repeat="movie in $ctrl.movies">{{movie.data.title}}</h4>
 </div>
-<div ng-if="!$ctrl.againbtn">
+<div ng-show="!$ctrl.againbtn"> 
     <button ng-click="$ctrl.playAgain()">Play Again?</button>
 </div>
 
