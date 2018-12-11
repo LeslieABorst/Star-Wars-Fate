@@ -1,4 +1,9 @@
+<div class="faraway" ng-hide="!$ctrl.letmesee">
+    <h2 class="pixelfont">A long time ago in a galaxy far far away ... ...</h2>
+    <button ng-click="$ctrl.quizStart()" class="btnstart">Start Quiz</button>
+</div>
 
+<<<<<<< HEAD
 
     <div class="faraway" ng-hide="!$ctrl.letmesee">
         <img src="assets/images/farfaraway.png" alt="a long time ago in a galaxy far far away" title="star wars">
@@ -51,8 +56,45 @@
                 <button class="answerbutton" ng-click="$ctrl.qfourAnswerB()">LightSaber</button>
             </div>
         
+=======
+<div ng-show="!$ctrl.letmesee" class="questions">
+    <h2>What is your Star Wars Fate?</h2>
+<!-- -------------------------------------------- -->
+    <div id="lead" class="leader box" ng-if="$ctrl.qone">
+        <img class ="landingGif" src="assets/images/gif1.gif" height="250px" width="315">
+        <h3>Are you a leader or a follower?</h3>
+        <div class="buttons">
+            <button class="b1" ng-click="$ctrl.qoneAnswerA()">Leader</button>
+            <button class="b2" ng-click="$ctrl.qoneAnswerB()">Follower</button>
         </div>
-   
-<!-- ---------------------------------------------------------- -->
     </div>
-    
+<!-- ------------------------------------------ -->
+    <div ng-if="!$ctrl.qtwo" id="light" class="dark box">
+        <img class="landingGif" src="assets/images/gif2.gif" height="250" width="315">
+        <h3>Do you identify with the light side or dark side?</h3>
+        <div class="buttons">
+            <button class="b1" ng-click="$ctrl.qtwoAnswerA()">Light Side</button>
+            <button class="b2" ng-click="$ctrl.qtwoAnswerB()">Dark Side</button>
+        </div>
+    </div>
+<!-- --------------------------------------------------- -->
+    <div ng-if="!$ctrl.qthree" id="action" class="romance box">
+        <img class="landingGif" src="assets/images/gif3.gif" height="250" width="315">
+        <h3>Do you prefer an action or romance movie?</h3>
+        <div class="buttons">
+            <button class="b1" ng-click="$ctrl.qthreeAnswerA()">Action</button>
+            <button class="b2" ng-click="$ctrl.qthreeAnswerB()">Romance</button>
+        </div>
+    </div>
+<!-- ------------------------------------------------ -->
+    <div ng-if="!$ctrl.qfour" id="saber" class="blaster box">
+        <img class="landingGif" src="assets/images/gif4.gif" height="250" width="315">
+        <h3>Would you rather use a lightsaber or blaster?</h3>
+        <div class="buttons">
+            <button class="b1" ng-click="$ctrl.qfourAnswerA()">Blaster</button>
+            <button class="b2" ng-click="$ctrl.qfourAnswerB()">LightSaber</button>
+>>>>>>> a79352947f375db5087ffb18c2edc2dc6866a60d
+        </div>
+    </div>
+</div>
+

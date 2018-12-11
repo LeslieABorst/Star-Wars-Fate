@@ -6,6 +6,10 @@
     font-family: StarWarsFont;
     src: url(assets/Death\ Star.otf);
 }
+@font-face {
+    font-family: PixelFont;
+    src: url(assets/slkscr.ttf);
+}
 /*INDEX STYLES*/
 
 .wrapper {
@@ -65,10 +69,12 @@ h3 {
     justify-content: space-between;
 }
 
-.faraway img {
-    width: 90%;
-    height: 90%;
+.pixelfont {
+    font-family: PixelFont, Arial, Helvetica, sans-serif;
+    color: #3EC894;
+    padding: 15%;
 }
+
 
 .btnstart {
     font-family: StarWarsFont, Arial, Helvetica, sans-serif;
