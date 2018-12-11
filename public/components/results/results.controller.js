@@ -81,7 +81,7 @@ angular
       if (JSON.stringify($ctrl.solo.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.solo.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/han2.png';
+          $ctrl.personimage = 'assets/images/han2.jpg';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
