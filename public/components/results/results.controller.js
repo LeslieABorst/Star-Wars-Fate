@@ -9,7 +9,7 @@ angular
     $ctrl.resultname = true;
     $ctrl.resultplanet = true;
     $ctrl.resultmovies = true;
-    $ctrl.againbtn = true;
+    
     
     
     $ctrl.solo = {
@@ -81,39 +81,48 @@ angular
       if (JSON.stringify($ctrl.solo.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.solo.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/starwarslogo.png';
+          $ctrl.personimage = 'assets/images/han2.png';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
               $ctrl.resultname = true;
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
-            console.log(result); }, 5000);
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
                 $ctrl.resultmovies = true;
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
-              console.log($ctrl.planet); }, 5000);
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
-            $timeout( function(){
-              $ctrl.againbtn = false;
-             }, 8000 );
         });
         console.log("hooray");
       };
 
       if (JSON.stringify($ctrl.luke.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.luke.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/luke3.jpg';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -121,14 +130,24 @@ angular
 
       if (JSON.stringify($ctrl.leia.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.leia.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/leia3.png';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -136,29 +155,49 @@ angular
 
       if (JSON.stringify($ctrl.obiwan.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.obiwan.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/obi2jpg.png';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
       };
 
-      if (JSON.stringify($ctrl.boba).answers === JSON.stringify($ctrl.userAnswers)) {
+      if (JSON.stringify($ctrl.boba.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.boba.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/boba2.png';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -166,14 +205,24 @@ angular
 
       if (JSON.stringify($ctrl.palpatine.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.palpatine.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/palp0.gif';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -181,14 +230,24 @@ angular
 
       if (JSON.stringify($ctrl.jabba.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.jabba.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/jabba1.jpg';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -196,14 +255,24 @@ angular
 
       if (JSON.stringify($ctrl.vader.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.vader.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/vader2.jpg';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -211,14 +280,24 @@ angular
 
       if (JSON.stringify($ctrl.c3po.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.c3po.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/c3po.png';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -226,14 +305,24 @@ angular
 
       if (JSON.stringify($ctrl.r2d2.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.r2d2.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/r2-1.jpg';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => {
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -241,14 +330,24 @@ angular
 
       if (JSON.stringify($ctrl.chewy.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.chewy.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/chewey3.jpg';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -256,14 +355,24 @@ angular
 
       if (JSON.stringify($ctrl.rey.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.rey.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/rey0.jpg';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -271,14 +380,24 @@ angular
 
       if (JSON.stringify($ctrl.lando.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.lando.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/lando1.jpg';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -286,14 +405,24 @@ angular
 
       if (JSON.stringify($ctrl.maul.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.maul.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/maul2png.png';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -301,14 +430,23 @@ angular
 
       if (JSON.stringify($ctrl.phasma.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.phasma.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/phasma1.png';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
@@ -316,29 +454,34 @@ angular
 
       if (JSON.stringify($ctrl.grevius.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.grevius.id).then(response => {
-          console.log(response.data);
+          $ctrl.person = response.data;
+          $ctrl.personimage = 'assets/images/general.jpg';
+          console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
-            $timeout(() => { $ctrl.movies = result;
-            console.log(result); });
+            $timeout(() => { 
+              $ctrl.resultname = true;
+              $ctrl.resultmovies = false;
+              $ctrl.movies = result;
+              $ctrl.movieimg = 'assets/images/posters.png';
+            console.log(result); }, 3000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
-              $timeout(() => { $ctrl.planet = planet.data;
-              console.log($ctrl.planet); });
+              $timeout(() => { 
+                $ctrl.resultmovies = true;
+                $ctrl.resultplanet = false;
+                $ctrl.planet = planet.data;
+                $ctrl.planetimg = 'assets/images/rey1.gif';
+              console.log($ctrl.planet); }, 6000);
             });
         });
         console.log("HOORAY");
       };
     };
-    // $timeout( function(){
-    //        $ctrl.againbtn = false;
-    //       }, 8000 );
-    
-        $ctrl.playAgain = function() {
+    $ctrl.playAgain = function() {
       $location.url("/");
+      $ctrl.userAnswers = [];
+      SwapiService.userAnswers = [];
     };
-
-    
-
   });
 
 

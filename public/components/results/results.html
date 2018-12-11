@@ -1,39 +1,20 @@
 <div ng-if="$ctrl.whobtn">
-    <button ng-click="$ctrl.personResults()">Who Am I?</button>
+    <button id="who" ng-click="$ctrl.personResults()">Who Am I?</button>
 </div>
 <div style="background:white;" ng-if="!$ctrl.resultname">
     <h2>{{$ctrl.person.name}}</h2>
     <img ng-src="{{$ctrl.personimage}}" title="character image" alt="character image">
 </div>
-<div style="background:white;" ng-if="!$ctrl.resultplanet">
-    <h2>Born in {{$ctrl.person.birth_year}} on the planet of {{$ctrl.planet.name}}</h2>
-    <img src="#" title="homeworld" alt="homeworld">
-</div>
 <div style="background:white;" ng-if="!$ctrl.resultmovies">
     <h2>And was featured in the following movies</h2>
+    <img ng-src="{{$ctrl.movieimg}}" title="movie posters" alt="movie posters" width="50%" height="auto">
     <h4 ng-repeat="movie in $ctrl.movies">{{movie.data.title}}</h4>
 </div>
-<div ng-show="!$ctrl.againbtn"> 
-    <button ng-click="$ctrl.playAgain()">Play Again?</button>
+<div style="background:white;" ng-if="!$ctrl.resultplanet">
+    <h2>Born in {{$ctrl.person.birth_year}} on the planet of {{$ctrl.planet.name}}</h2>
+    <img ng-src="{{$ctrl.planetimg}}" title="homeworld" alt="homeworld">
+    <div> 
+        <button ng-click="$ctrl.playAgain()">Play Again?</button>
+    </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-<div class="animate-area">
-    <button id="who" ng-click="$ctrl.personResults()">Who Am I?</button>
-<div>
-    <!-- <section class="animate-area">
-
-   
-    <button ng-click="$ctrl.personResults()">Who Am I?</button>
-</section>
-
-</div>
- -->

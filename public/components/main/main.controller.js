@@ -9,6 +9,7 @@ angular
     $ctrl.qtwo = true;
     $ctrl.qthree = true;
     $ctrl.qfour = true;
+    
 
     $ctrl.quizStart = function() {
         $ctrl.letmesee = false;
