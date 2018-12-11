@@ -89,7 +89,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -97,7 +97,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("hooray");
@@ -114,7 +114,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -122,7 +122,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -139,7 +139,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -147,7 +147,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -156,7 +156,7 @@ angular
       if (JSON.stringify($ctrl.obiwan.answers) === JSON.stringify($ctrl.userAnswers)) {
         SwapiService.getPeople($ctrl.obiwan.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/obi2jpg.png';
+          $ctrl.personimage = 'assets/images/obi2jpg.jpg';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -164,7 +164,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -172,7 +172,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -189,7 +189,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -197,7 +197,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -214,7 +214,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -222,7 +222,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -239,7 +239,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -247,7 +247,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -264,7 +264,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -272,7 +272,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -289,7 +289,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -297,7 +297,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -314,7 +314,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -322,7 +322,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -339,7 +339,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -347,7 +347,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -364,7 +364,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -372,7 +372,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -389,7 +389,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -397,7 +397,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -414,7 +414,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -422,7 +422,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -438,7 +438,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -446,7 +446,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
@@ -463,7 +463,7 @@ angular
               $ctrl.resultmovies = false;
               $ctrl.movies = result;
               $ctrl.movieimg = 'assets/images/posters.png';
-            console.log(result); }, 3000);
+            console.log(result); }, 5000);
           });
             SwapiService.getPlanets(response.data.homeworld).then(planet => {
               $timeout(() => { 
@@ -471,7 +471,7 @@ angular
                 $ctrl.resultplanet = false;
                 $ctrl.planet = planet.data;
                 $ctrl.planetimg = 'assets/images/rey1.gif';
-              console.log($ctrl.planet); }, 6000);
+              console.log($ctrl.planet); }, 10000);
             });
         });
         console.log("HOORAY");
