@@ -38,6 +38,7 @@
 h2 {
     text-align: center;
     font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+    font-size: 1.75em;
 }
 
 h3 {
@@ -72,7 +73,7 @@ h3 {
 .pixelfont {
     font-family: PixelFont, Arial, Helvetica, sans-serif;
     color: #3EC894;
-    padding: 15%;
+    padding: 5% 15%;
 }
 
 
@@ -119,7 +120,18 @@ button a {
 }
 /*------------------------------------------*/
 
-
+.boxending {
+    background: white;
+    color: black;
+    height: 25em;
+    width: 20em;
+    text-align: center;
+    border-radius: 25px;
+    padding: 2%;
+    margin-top: 20%;
+    font-weight: 900;
+    border: #FFE633 4px solid;
+}
 
 .box {
     background: white;
@@ -128,10 +140,9 @@ button a {
     width: 20em;
     text-align: center;
     border-radius: 25px;
-    padding-top: 2%;
+    padding: 2%;
     font-weight: 900;
     border: #FFE633 4px solid;
-
 }
 
 .buttons {
@@ -150,7 +161,6 @@ button a {
 
 .landingGif {
     border-radius: 25px;
-
     }
 
 
@@ -169,21 +179,7 @@ button a {
     width: 300px;
     height: 75px;
     font-size: 48px;
+    margin: 10%;
 }
-
-
-@media only screen and (max-width: 480px) {
-  {
-    
-}
-
-@media only screen and (max-width: 768px){
-
-}
-
-@media only screen and (max-width: 1200px)
-
-
-
 
 
