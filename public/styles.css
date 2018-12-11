@@ -115,11 +115,6 @@ button a {
 
 
 
-
-#q1 {
-    display:flex;
-}
-
 .box {
     background: white;
     color: black;
@@ -128,7 +123,6 @@ button a {
     text-align: center;
     border-radius: 25px;
     padding-top: 2%;
-    margin-top: -8px;
     font-weight: 900;
     border: #FFE633 4px solid;
 
@@ -137,12 +131,10 @@ button a {
 .buttons {
     display: flex;
     justify-content: space-around;
-    /* align-content: ; */
-
-  /*  border: black solid 2px;*/
+    width: 100%;
 }
 
-.b1, .b2  {
+.answerbutton  {
     border-radius: 25px;
     border: solid black 2px;
     width: 40%;
@@ -153,19 +145,14 @@ button a {
 .landingGif {
     border-radius: 25px;
 
-}
+    }
 
 
-.b1:hover
+.answerbutton:hover
 {
     background-color: red;
 }
 
-
-.b2:hover 
-{
-    background-color: red;
-}
 
 #who {
     display: flex;
@@ -178,6 +165,17 @@ button a {
     font-size: 48px;
 }
 
+
+@media only screen and (max-width: 480px) {
+  {
+    
+}
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 1200px)
 
 
 
