@@ -20,10 +20,7 @@
     justify-content: center;
 }
 
-/*h9 {
-    color:white;
-}
-*/
+
 .heading {
     font-family: StarWarsFont, Arial, Helvetica, sans-serif;
     letter-spacing: 4px;
@@ -31,6 +28,7 @@
     text-align: center;
     color: #FFE633;
     margin-bottom: 0;
+    margin-top: 1%;
 }
 
 
@@ -39,6 +37,7 @@ h2 {
     text-align: center;
     font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
     font-size: 1.75em;
+
 }
 
 h3 {
@@ -81,11 +80,12 @@ h3 {
     font-family: StarWarsFont, Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
     font-size: 1.75em;
-    padding: 2%;
+    padding: 1%;
     margin: 5%;
-    border-radius: 25px;
-    width: 200px ;
+    border-radius: 36px;
+    width: 275px;
     border: black solid 3px;
+    height: 60px;
 }
 
 .questions {
@@ -127,10 +127,11 @@ button a {
     width: 20em;
     text-align: center;
     border-radius: 25px;
-    padding: 2%;
-    margin-top: 20%;
     font-weight: 900;
     border: #FFE633 4px solid;
+    margin-top: 20%;
+    padding-top: 2%;
+
 }
 
 .box {
@@ -140,9 +141,10 @@ button a {
     width: 20em;
     text-align: center;
     border-radius: 25px;
-    padding: 2%;
     font-weight: 900;
     border: #FFE633 4px solid;
+   padding-top: 2%;
+ 
 }
 
 .buttons {
@@ -157,22 +159,23 @@ button a {
     width: 40%;
     height: 20%;
     background-color: white;
+
 }
 
 .playagain {
-    margin-top: 20%;
+    margin-top: 10%;
+    border-radius: 25px;
+    border: solid black 2px;
+    width: 60%;
+    height: 40px;
+    background-color: white;
+    font-size: 1em;
+
 }
 
 .landingGif {
     border-radius: 25px;
     }
-
-
-.answerbutton:hover
-{
-    background-color: red;
-}
-
 
 #who {
     display: flex;
@@ -180,10 +183,26 @@ button a {
     border-radius: 70px;
     background-color: white;
     border: solid black 2px;
-    width: 300px;
-    height: 75px;
-    font-size: 3em;
+    width: 275px;
+    height: 70px;
+    font-size: 2em;
     margin-top: 25%;
+
+
+.btnstart:hover, #who:hover, .answerbutton:hover {
+    background-color: red;
 }
+
+@media only screen and (min-width: 768px) {
+  .btnstart {
+   border-radius: 48px;
+   width: 300px;
+  }
+}
+    
+
+
+
+
 
 
