@@ -79,9 +79,9 @@ angular
       $ctrl.whobtn = false;
       $ctrl.resultname = false;
       if (JSON.stringify($ctrl.solo.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/han2.jpg';
         SwapiService.getPeople($ctrl.solo.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/han2.png';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -104,9 +104,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.luke.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/luke3.jpg';
         SwapiService.getPeople($ctrl.luke.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/luke3.jpg';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -129,9 +129,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.leia.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/leia3.png';
         SwapiService.getPeople($ctrl.leia.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/leia3.png';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -154,9 +154,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.obiwan.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/obi2jpg.jpg';
         SwapiService.getPeople($ctrl.obiwan.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/obi2jpg.jpg';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -179,9 +179,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.boba.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/boba2.png';
         SwapiService.getPeople($ctrl.boba.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/boba2.png';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -204,9 +204,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.palpatine.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/palp0.gif';
         SwapiService.getPeople($ctrl.palpatine.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/palp0.gif';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -229,9 +229,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.jabba.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/jabba1.jpg';
         SwapiService.getPeople($ctrl.jabba.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/jabba1.jpg';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -254,9 +254,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.vader.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/vader2.jpg';
         SwapiService.getPeople($ctrl.vader.id).then(response => {
-          $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/vader2.jpg';
+          $ctrl.person = response.data;         
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -279,9 +279,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.c3po.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/c3po.png';
         SwapiService.getPeople($ctrl.c3po.id).then(response => {
-          $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/c3po.png';
+          $ctrl.person = response.data;         
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -304,9 +304,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.r2d2.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/r2-1.jpg';
         SwapiService.getPeople($ctrl.r2d2.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/r2-1.jpg';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => {
@@ -329,9 +329,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.chewy.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/chewey3.jpg';
         SwapiService.getPeople($ctrl.chewy.id).then(response => {
-          $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/chewey3.jpg';
+          $ctrl.person = response.data;         
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -354,9 +354,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.rey.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/rey0.jpg';
         SwapiService.getPeople($ctrl.rey.id).then(response => {
-          $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/rey0.jpg';
+          $ctrl.person = response.data;          
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -379,9 +379,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.lando.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/lando1.jpg';
         SwapiService.getPeople($ctrl.lando.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/lando1.jpg';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -404,9 +404,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.maul.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/maul2png.png';
         SwapiService.getPeople($ctrl.maul.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/maul2png.png';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 
@@ -429,9 +429,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.phasma.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/phasma1.png';
         SwapiService.getPeople($ctrl.phasma.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/phasma1.png';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { $ctrl.resultname = true;
@@ -453,9 +453,9 @@ angular
       };
 
       if (JSON.stringify($ctrl.grevius.answers) === JSON.stringify($ctrl.userAnswers)) {
+        $ctrl.personimage = 'assets/images/general.jpg';
         SwapiService.getPeople($ctrl.grevius.id).then(response => {
           $ctrl.person = response.data;
-          $ctrl.personimage = 'assets/images/general.jpg';
           console.log($ctrl.person);
           SwapiService.getMovies(response.data.films).then(result => {
             $timeout(() => { 

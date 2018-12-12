@@ -34,7 +34,6 @@
 }
 
 
-
 h2 {
     text-align: center;
     font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
@@ -127,8 +126,8 @@ button a {
     width: 20em;
     text-align: center;
     border-radius: 25px;
-    padding: 2%;
     margin-top: 20%;
+    padding-top: 2%;
     font-weight: 900;
     border: #FFE633 4px solid;
 }
@@ -140,7 +139,7 @@ button a {
     width: 20em;
     text-align: center;
     border-radius: 25px;
-    padding: 2%;
+    padding-top: 2%;
     font-weight: 900;
     border: #FFE633 4px solid;
 }
@@ -165,8 +164,7 @@ button a {
 
 .landingGif {
     border-radius: 25px;
-    }
-
+}
 
 .answerbutton:hover
 {
@@ -182,13 +180,8 @@ button a {
     border: solid black 2px;
     width: 300px;
     height: 75px;
-<<<<<<< HEAD
     font-size: 3em;
     margin-top: 25%;
-=======
-    font-size: 48px;
-    margin: 10%;
->>>>>>> 50fb029bab8bc16f8a26e7b324e70a8ac04cf730
 }
 
 

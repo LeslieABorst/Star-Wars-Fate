@@ -1,39 +1,19 @@
 <div ng-if="$ctrl.whobtn">
     <button id="who" ng-click="$ctrl.personResults()">Who Am I?</button>
 </div>
-<<<<<<< HEAD
-<div id="lead" class="leader box" ng-if="!$ctrl.resultname">
+<div id="lead" class="leader boxending" ng-if="!$ctrl.resultname">
     <h2>{{$ctrl.person.name}}</h2>
-    <img ng-src="{{$ctrl.personimage}}" title="character image" alt="character image" width="100%" height="auto">
+    <img ng-src="{{$ctrl.personimage}}" title="character image" alt="character image" width="auto" height="60%">
 </div>
-
-<div id="light" class="dark box" ng-if="!$ctrl.resultmovies">
+<div id="light" class="dark boxending" ng-if="!$ctrl.resultmovies">
     <h2>And was featured in the following movies</h2>
     <img ng-src="{{$ctrl.movieimg}}" title="movie posters" alt="movie posters" width="100%" height="auto">
     <h4 ng-repeat="movie in $ctrl.movies">{{movie.data.title}}</h4>
 </div>
-
-
-    <div id="action" class="romance box" ng-if="!$ctrl.resultplanet">
-    <h2>Born in {{$ctrl.person.birth_year}} on the planet of {{$ctrl.planet.name}}</h2>
+<div id="action" class="romance boxending" ng-if="!$ctrl.resultplanet">
+    <h2>Born in the year {{$ctrl.person.birth_year}}, on the planet of {{$ctrl.planet.name}}</h2>
     <img ng-src="{{$ctrl.planetimg}}" title="homeworld" alt="homeworld" width="100%" height="auto">
     <div> 
         <button class="answerbutton playagain" ng-click="$ctrl.playAgain()">Play Again?</button>
-=======
-<div id="lead" class="leader boxending" ng-if="!$ctrl.resultname">
-    <h2>{{$ctrl.person.name}}</h2>
-    <img class="landingGif" ng-src="{{$ctrl.personimage}}" title="character image" alt="character image" width="100%" height="auto">
-</div>
-<div id="light" class="dark boxending" ng-if="!$ctrl.resultmovies">
-    <h2>And was featured in the following movies</h2>
-    <img class="landingGif" ng-src="{{$ctrl.movieimg}}" title="movie posters" alt="movie posters" width="100%" height="auto">
-    <h4 ng-repeat="movie in $ctrl.movies">{{movie.data.title}}</h4>
-</div>
-<div id="action" class="romance boxending" ng-if="!$ctrl.resultplanet">
-    <h2>You were born in {{$ctrl.person.birth_year}} on the planet of {{$ctrl.planet.name}}</h2>
-    <img class="landingGif" ng-src="{{$ctrl.planetimg}}" title="homeworld" alt="homeworld" width="100%" height="auto">
-    <div> 
-        <button class="answerbutton" ng-click="$ctrl.playAgain()">Play Again?</button>
->>>>>>> 50fb029bab8bc16f8a26e7b324e70a8ac04cf730
     </div>
 </div>
