@@ -1,9 +1,12 @@
-<div ng-if="$ctrl.whobtn">
+<div ng-if="$ctrl.whobtn" class="whoami">
     <button id="who" ng-click="$ctrl.personResults()">Who Am I?</button>
+    <img class="father" src="../../assets/images/father.jpg" title="i am your father" alt="i am your father">
 </div>
+
+
 <div id="lead" class="leader boxending" ng-if="!$ctrl.resultname">
     <h2>{{$ctrl.person.name}}</h2>
-    <img ng-src="{{$ctrl.personimage}}" title="character image" alt="character image" width="auto" height="60%">
+    <img ng-src="{{$ctrl.personimage}}" title="character image" alt="character image" width="90%" height="70%">
 </div>
 <div id="light" class="dark boxending" ng-if="!$ctrl.resultmovies">
     <h2>And was featured in the following movies</h2>
@@ -11,7 +14,7 @@
     <h4 ng-repeat="movie in $ctrl.movies">{{movie.data.title}}</h4>
 </div>
 <div id="action" class="romance boxending" ng-if="!$ctrl.resultplanet">
-    <h2>Born in the year {{$ctrl.person.birth_year}}, on the planet of {{$ctrl.planet.name}}</h2>
+    <h2>You were born in the year {{$ctrl.person.birth_year}}, on the planet of {{$ctrl.planet.name}}</h2>
     <img ng-src="{{$ctrl.planetimg}}" title="homeworld" alt="homeworld" width="100%" height="auto">
     <div> 
         <button class="answerbutton playagain" ng-click="$ctrl.playAgain()">Play Again?</button>

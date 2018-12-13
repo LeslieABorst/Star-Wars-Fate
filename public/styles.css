@@ -1,6 +1,6 @@
 /*STAR WARS APP STYLES*/
 
-/*FONT FAMILY*/
+/*FONT FAMILIES*/
 
 @font-face {
     font-family: StarWarsFont;
@@ -10,7 +10,8 @@
     font-family: PixelFont;
     src: url(assets/slkscr.ttf);
 }
-/*INDEX STYLES*/
+
+/*CONTENT STYLES*/
 
 .wrapper {
     background: url(assets/images/star.png);
@@ -20,10 +21,6 @@
     justify-content: center;
 }
 
-/*h9 {
-    color:white;
-}
-*/
 .heading {
     font-family: StarWarsFont, Arial, Helvetica, sans-serif;
     letter-spacing: 4px;
@@ -31,8 +28,8 @@
     text-align: center;
     color: #FFE633;
     margin-bottom: 0;
+    margin-top: 1%;
 }
-
 
 h2 {
     text-align: center;
@@ -43,25 +40,8 @@ h2 {
 h3 {
     font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
     margin-top: 10%;
-
 }
 
-/*----------------moving star background-----------------------*/
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 100%; }
-}
-.animate-area { 
-	width: auto; 
-	height: 100%; 
-	background-image: url(assets/images/stars.png);
-	background-position: 0px 0px;
-	/* background-repeat: repeat-x; */
-    padding-top: 50px;
-
-	animation: animatedBackground 15s linear infinite;
-}
-/*---------------------------------------------*/
 .faraway {
     display: flex;
     flex-direction: column;
@@ -75,30 +55,24 @@ h3 {
     padding: 5% 15%;
 }
 
-
-.btnstart {
-    font-family: StarWarsFont, Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.75em;
-    padding: 2%;
-    margin: 5%;
-    border-radius: 25px;
-    width: 200px ;
-    border: black solid 3px;
+/*----------------moving star background-----------------------*/
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 100%; }
 }
-
-.questions {
-    color: white;
-}
-
-button a {
-    font-style: none;
+.animate-area { 
+	width: auto; 
+	height: 100%; 
+	background-image: url(assets/images/stars.png);
+	background-position: 0px 0px;
+    padding-top: 50px;
+	animation: animatedBackground 15s linear infinite;
 }
 
 
-/*slide in questions-------------------------*/
+/*slide in questions and responses-------------------------*/
+
 #lead, #light, #action, #saber{
-
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
 }
@@ -108,7 +82,6 @@ button a {
     -webkit-animation: slide-in 0.5s forwards;
 }
 
-
     
 @keyframes slide-in {
     100% { transform: translateX(0%); }
@@ -117,31 +90,72 @@ button a {
 @-webkit-keyframes slide-in {
     100% { -webkit-transform: translateX(0%); }
 }
-/*------------------------------------------*/
+
+/*IMAGES AND BOXES*/
+
+.landingGif {
+    border-radius: 25px;
+} 
+
+.father {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.whoami {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+}
+
+.questions {
+    color: #ffffff;
+}
 
 .boxending {
-    background: white;
-    color: black;
+    background: #ffffff;
+    color: #000000;
     height: 25em;
     width: 20em;
     text-align: center;
     border-radius: 25px;
-    margin-top: 20%;
-    padding-top: 2%;
     font-weight: 900;
     border: #FFE633 4px solid;
+    margin-top: 20%;
+    padding-top: 2%;
+
 }
 
 .box {
-    background: white;
-    color: black;
+    background: #ffffff;
+    color: #000000;
     height: 25em;
     width: 20em;
     text-align: center;
     border-radius: 25px;
-    padding-top: 2%;
     font-weight: 900;
     border: #FFE633 4px solid;
+    padding-top: 2%;
+}
+
+/*BUTTON STYLES*/
+
+.btnstart {
+    font-family: StarWarsFont, Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.75em;
+    padding: 1%;
+    margin: 5%;
+    border-radius: 36px;
+    width: 275px;
+    border: #000000 solid 3px;
+    height: 60px;
+}
+
+button a {
+    font-style: none;
 }
 
 .buttons {
@@ -155,33 +169,64 @@ button a {
     border: solid black 2px;
     width: 40%;
     height: 20%;
-    background-color: white;
+    background-color: #ffffff;
+
 }
 
 .playagain {
-    margin-top: 20%;
-}
-
-.landingGif {
+    margin-top: 10%;
     border-radius: 25px;
+    border: solid black 2px;
+    width: 60%;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1em;
 }
 
-.answerbutton:hover
+.btnstart:hover, :focus {
+    background-color: #17E5D9;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ffffff;
+}
+
+.answerbutton:hover, :focus
 {
-    background-color: red;
+    background-color: #FF0101;
+    cursor: pointer;
+    box-shadow: 0 0 5px #FF0101;
 }
-
 
 #who {
-    display: flex;
-    justify-content: center;
     border-radius: 70px;
-    background-color: white;
-    border: solid black 2px;
-    width: 300px;
-    height: 75px;
+    background-color: #ffffff;
+    border: solid #000000 2px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
     font-size: 3em;
-    margin-top: 25%;
+    margin-top: 8%;
 }
+
+#who:hover, :focus {
+    background-color: #17E5D9;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ffffff;
+}
+
+/*BEGIN MEDIA QUERIES*/
+
+@media only screen and (min-width: 768px) {
+  .btnstart {
+   border-radius: 48px;
+   width: 300px;
+  }
+}
+
+
+    
+
+
+
+
 
 
